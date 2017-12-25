@@ -1,0 +1,27 @@
+﻿<Window x:Class="Pebble.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="720" Width="1300">
+    <Grid Margin="0,0,2,-21">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="10" >
+            <StackPanel Orientation="Horizontal" Height="48" Margin="0,0,0,0">
+                <TextBox Padding="0 8 0 0" Text="Search" TextAlignment="Justify" FontSize="20" Width="242"/>
+                <Image Width="59" Source="E:\Resources\ic_search_black_24dp\android\drawable-hdpi\ic_search_black_24dp.png" />
+            </StackPanel>
+            <TabControl Margin="0 15 0 0">  
+                <TabItem Header="Surah" FontSize="22" Padding="45 0 45 0">
+                </TabItem>
+                <TabItem Header="Juz" FontSize="22" Padding="45 0 75 0">
+                </TabItem>
+            </TabControl>
+
+
+            </StackPanel>
+        
+
+    </Grid>
+</Window>
