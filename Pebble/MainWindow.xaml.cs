@@ -24,7 +24,17 @@ namespace Pebble
         {
             InitializeComponent();
         }
-
+         private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {
+            String path = @"C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\Files\NamesOfSurah.txt";
+              String [] nameOfSurah = System.IO.File.ReadAllLines(path);
+              foreach (String line in nameOfSurah)
+              {
+                  var item = new TreeViewItem();
+                  item.Header = line;
+                  FolderView.Items.Add(item);
+              }
+        }
       
 
     }
