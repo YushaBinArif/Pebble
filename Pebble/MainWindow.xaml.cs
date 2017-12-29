@@ -35,6 +35,14 @@ namespace Pebble
                   FolderView.Items.Add(item);
               }
         }
+
+         private void Image_MouseMove_1(object sender, MouseEventArgs e)
+         {
+             double x = e.GetPosition(this).X;
+             double y = e.GetPosition(this).Y;
+             this.Text1.Text = x + ", " + y;
+            
+         }
       
 
     }

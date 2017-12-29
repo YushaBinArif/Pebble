@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("files/namesofsurah.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/quranemajeedtestpic1.gif")]
 
 

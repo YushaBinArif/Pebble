@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Pebble.SurahListItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="300">
+    <Grid Background="White">
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Background="Aqua" Width="10" VerticalAlignment="Center" Height="60" />
+        <!--Image-->
+        <Border Grid.Column="1" Padding="8" HorizontalAlignment="Left" Width="73" RenderTransformOrigin="0.378,0.489">
+            <Border VerticalAlignment="Stretch" Background="Cyan" Margin="2,-2,3,-2" CornerRadius="40" >
+                <TextBlock Text="1" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" />
+            </Border>
+        </Border>
+        <!--Text-->
+        <Grid  Grid.Column="2">
+            <TextBlock Text="Surah E AlFatiah" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Height="43" Margin="2,0" />
+        </Grid>
+    </Grid>
+</UserControl>
