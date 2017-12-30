@@ -30,9 +30,19 @@ namespace Pebble
               String [] nameOfSurah = System.IO.File.ReadAllLines(path);
               foreach (String line in nameOfSurah)
               {
-                  var item = new TreeViewItem();
-                  item.Header = line;
-                  FolderView.Items.Add(item);
+                  var image = new Image();
+                  var Bitimage = new BitmapImage();
+                  Bitimage.BeginInit();
+
+                 var item = new SurahListItem();
+                 //try{
+                 //   Bitimage.UriSource = new Uri("images/Thing.png", UriKind.Relative);
+                 //   Bitimage.EndInit();
+                 //   image.Stretch = Stretch.UniformToFill;
+                 //   image.Source = Bitimage;
+                 //    }
+                 // catch{}
+                 ItemsControl.Items.Add(item);
               }
         }
 

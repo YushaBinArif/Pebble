@@ -14,13 +14,14 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Orientation="Vertical"  >
+        <StackPanel Grid.Column="0" Orientation="Vertical" Margin="0,0,0,27"  >
             <StackPanel Orientation="Horizontal" Height="48" Margin="0,0,0,0">
                 <TextBox Padding="0 8 0 0" Margin="5" VerticalAlignment="Center" Text="Search" TextAlignment="Justify" FontSize="20" Width="242"/>
                 <Image Width="59" Source="E:\Resources\ic_search_black_24dp\android\drawable-hdpi\ic_search_black_24dp.png" />
             </StackPanel>
             <TabControl Margin="5,15,0,0" Height="125" >  
                 <TabItem Header="Surah" FontSize="22" ScrollViewer.CanContentScroll="True" Padding="45 0 45 0">
+               <!--  
                     <Grid>
                         <TreeView x:Name="FolderView">
                             <TreeView.Resources>
@@ -39,11 +40,22 @@
                     </TreeView.Resources>
                         </TreeView>
             </Grid>
+                    -->
+                    <ScrollViewer x:Name="ScrollViewer">
+                        <ItemsControl x:Name="ItemsControl">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <MyControl:SurahListItem/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                        
+                    </ScrollViewer>
                 </TabItem>
          <!--Second Tab Item-->
                 
                 <TabItem Header="Juz" FontSize="22" Padding="45 0 75 0">
-                    <MyControl:SurahListItem Height="60" >
+                    <MyControl:SurahListItem>
                         
                     </MyControl:SurahListItem>
                 </TabItem>

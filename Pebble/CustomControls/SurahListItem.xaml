@@ -15,13 +15,22 @@
         <Border Background="Aqua" Width="10" VerticalAlignment="Center" Height="60" />
         <!--Image-->
         <Border Grid.Column="1" Padding="8" HorizontalAlignment="Left" Width="73" RenderTransformOrigin="0.378,0.489">
-            <Border VerticalAlignment="Stretch" Background="Cyan" Margin="2,-2,3,-2" CornerRadius="40" >
-                <TextBlock Text="1" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" />
+            <Border VerticalAlignment="Stretch" Background="Aqua"  Margin="2,-2,3,-2" CornerRadius="40" >
+                <Image x:Name="IconOfSurah"  Source="E:\Resources\Makkah5.PNG" Stretch="UniformToFill"  />
+                <!--  <TextBlock Text="1" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" />-->
             </Border>
         </Border>
         <!--Text-->
         <Grid  Grid.Column="2">
-            <TextBlock Text="Surah E AlFatiah" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" Height="43" Margin="2,0" />
+            <StackPanel Orientation="Vertical">
+                <TextBlock x:Name="NameOfSurah" TextAlignment="Left" Text="{Binding Surah}" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="25" Height="33" Margin="2,0" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock x:Name="VerseNumber" Text="Verse :" Padding="0 3 0 8" VerticalAlignment="Center" Width="100" Foreground="Gray"/>
+                    <TextBlock x:Name="ParahNumber" Text="Parah :" Padding="0 3 0 8" Width="113" Foreground="Gray" RenderTransformOrigin="0.487,2.375" />
+                </StackPanel>
+                
+            </StackPanel>
+            
         </Grid>
     </Grid>
 </UserControl>

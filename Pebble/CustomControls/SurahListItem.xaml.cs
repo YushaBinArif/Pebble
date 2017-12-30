@@ -24,5 +24,29 @@ namespace Pebble
         {
             InitializeComponent();
         }
+        public string Surah 
+        {
+            get { return this.NameOfSurah.Text; }
+            set { this.NameOfSurah.Text = value;}
+        }
+
+        public string Verse 
+        {
+            get { return this.VerseNumber.Text; }
+            set { this.VerseNumber.Text = value; }
+        }
+
+        public string Parah
+        {
+            get { return this.ParahNumber.Text; }
+            set { this.ParahNumber.Text = value; }
+        }
+
+        public ImageSource Icon
+        {
+            get { return this.IconOfSurah.Source; }
+            set { this.IconOfSurah.Source = value; }
+        }
+      
     }
 }
