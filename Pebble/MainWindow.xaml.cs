@@ -26,31 +26,37 @@ namespace Pebble
         }
          private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
-            String path = @"C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\Files\NamesOfSurah.txt";
-              String [] nameOfSurah = System.IO.File.ReadAllLines(path);
-              foreach (String line in nameOfSurah)
-              {
-                  var image = new Image();
-                  var Bitimage = new BitmapImage();
-                  Bitimage.BeginInit();
-
-                 var item = new SurahListItem();
-                 //try{
-                 //   Bitimage.UriSource = new Uri("images/Thing.png", UriKind.Relative);
-                 //   Bitimage.EndInit();
-                 //   image.Stretch = Stretch.UniformToFill;
-                 //   image.Source = Bitimage;
-                 //    }
-                 // catch{}
-                 ItemsControl.Items.Add(item);
-              }
+            string path = @"c:\users\yousha arif\documents\visual studio 2012\projects\pebble\pebble\files\namesofsurah.txt";
+            string[] nameofsurah = System.IO.File.ReadAllLines(path);
+            foreach (string line in nameofsurah)
+            {
+               // var image = new Image();
+                //var bitimage = new bitmapimage();
+                //bitimage.begininit();
+                char[] c = {' '};
+                String [] word = line.Split(c);
+                var item = new SurahListItem();
+                item.Surah = word[0];
+                item.Verse = word[1];
+                item.Ruku = word[2];
+             //   try
+            //    {
+                    //bitimage.urisource = new uri("images/picb.png", urikind.relative);
+                    //bitimage.endinit();
+                    //image.stretch = stretch.uniformtofill;
+                    //image.source = bitimage;
+               //     item.Icon = "Images/picb.png";
+                //}
+               // catch { }
+                ItemsControl.Items.Add(item);
+            }
         }
 
          private void Image_MouseMove_1(object sender, MouseEventArgs e)
          {
              double x = e.GetPosition(this).X;
              double y = e.GetPosition(this).Y;
-             this.Text1.Text = x + ", " + y;
+           //  this.Text1.Text = x + ", " + y;
             
          }
       

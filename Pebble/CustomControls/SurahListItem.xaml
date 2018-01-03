@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:v="clr-namespace:Pebble.ValueConverters.Word"
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="300">
     <Grid Background="White">
@@ -16,7 +17,7 @@
         <!--Image-->
         <Border Grid.Column="1" Padding="8" HorizontalAlignment="Left" Width="73" RenderTransformOrigin="0.378,0.489">
             <Border VerticalAlignment="Stretch" Background="Aqua"  Margin="2,-2,3,-2" CornerRadius="40" >
-                <Image x:Name="IconOfSurah"  Source="E:\Resources\Makkah5.PNG" Stretch="UniformToFill"  />
+                <Image x:Name="IconOfSurah"  Source="C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\Images\picb.png" Stretch="UniformToFill" Margin="10,0,-10,0"  />
                 <!--  <TextBlock Text="1" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" />-->
             </Border>
         </Border>
@@ -26,7 +27,7 @@
                 <TextBlock x:Name="NameOfSurah" TextAlignment="Left" Text="{Binding Surah}" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="25" Height="33" Margin="2,0" />
                 <StackPanel Orientation="Horizontal">
                     <TextBlock x:Name="VerseNumber" Text="Verse :" Padding="0 3 0 8" VerticalAlignment="Center" Width="100" Foreground="Gray"/>
-                    <TextBlock x:Name="ParahNumber" Text="Parah :" Padding="0 3 0 8" Width="113" Foreground="Gray" RenderTransformOrigin="0.487,2.375" />
+                    <TextBlock x:Name="RukuNumber" Text="Ruku :" Padding="0 3 0 8" Width="113" Foreground="Gray" RenderTransformOrigin="0.487,2.375" />
                 </StackPanel>
                 
             </StackPanel>

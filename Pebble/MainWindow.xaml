@@ -19,7 +19,7 @@
                 <TextBox Padding="0 8 0 0" Margin="5" VerticalAlignment="Center" Text="Search" TextAlignment="Justify" FontSize="20" Width="242"/>
                 <Image Width="59" Source="E:\Resources\ic_search_black_24dp\android\drawable-hdpi\ic_search_black_24dp.png" />
             </StackPanel>
-            <TabControl Margin="5,15,0,0" Height="125" >  
+            <TabControl Margin="5,15,0,0" Height="610" >  
                 <TabItem Header="Surah" FontSize="22" ScrollViewer.CanContentScroll="True" Padding="45 0 45 0">
                <!--  
                     <Grid>
@@ -41,7 +41,7 @@
                         </TreeView>
             </Grid>
                     -->
-                    <ScrollViewer x:Name="ScrollViewer">
+                    <ScrollViewer Height="580" x:Name="ScrollViewer">
                         <ItemsControl x:Name="ItemsControl">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
@@ -61,9 +61,6 @@
                 </TabItem>
             </TabControl>
 
-
-            <TextBlock x:Name="Text1" Text="Content" FontSize="20" />
-            
         </StackPanel>
         <Image Grid.Column="1" MouseMove="Image_MouseMove_1" VerticalAlignment="Top" Source="Images/QuranEMajeedTestPic1.gif"/> 
 

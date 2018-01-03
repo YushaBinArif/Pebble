@@ -36,16 +36,16 @@ namespace Pebble
             set { this.VerseNumber.Text = value; }
         }
 
-        public string Parah
+        public string Ruku
         {
-            get { return this.ParahNumber.Text; }
-            set { this.ParahNumber.Text = value; }
+            get { return this.RukuNumber.Text; }
+            set { this.RukuNumber.Text = value; }
         }
 
-        public ImageSource Icon
+        public String Icon
         {
-            get { return this.IconOfSurah.Source; }
-            set { this.IconOfSurah.Source = value; }
+            get;
+            set;
         }
       
     }
