@@ -8,44 +8,30 @@
             <Setter Property="FlowDirection" Value="LeftToRight"/>
         </Style>
     </Window.Resources>
-
+<!--Main Window-->
     <Grid Margin="0,0,2,-21">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="3*" />
         </Grid.ColumnDefinitions>
+    <!--Left Side Portion That is Surah List-->    
         <StackPanel Grid.Column="0" Orientation="Vertical" Margin="0,0,0,27"  >
             <StackPanel Orientation="Horizontal" Height="48" Margin="0,0,0,0">
+                <!--For Search Bar-->
                 <TextBox Padding="0 8 0 0" Margin="5" VerticalAlignment="Center" Text="Search" TextAlignment="Justify" FontSize="20" Width="242"/>
-                <Image Width="59" Source="E:\Resources\ic_search_black_24dp\android\drawable-hdpi\ic_search_black_24dp.png" />
+                <!--For Search Icon-->
+                <Image  Width="59" Source="E:\Resources\ic_search_black_24dp\android\drawable-hdpi\ic_search_black_24dp.png" />
             </StackPanel>
-            <TabControl Margin="5,15,0,0" Height="610" >  
+            <!--For Tabs-->
+            <TabControl Margin="5,15,0,0" Height="610" >
+                <!--For Surah First Tab Item-->
                 <TabItem Header="Surah" FontSize="22" ScrollViewer.CanContentScroll="True" Padding="45 0 45 0">
-               <!--  
-                    <Grid>
-                        <TreeView x:Name="FolderView">
-                            <TreeView.Resources>
-                                <Style TargetType="{x:Type TreeViewItem}">
-                                    <Setter Property="HeaderTemplate">
-                                        <Setter.Value>
-                                    <DataTemplate>
-                                                <StackPanel Orientation="Horizontal">
-                                                    <Image Width="60" HorizontalAlignment="Left" Source="Images/picb.png"/>
-                                                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Left" TextAlignment="Left" Width="200" Text="{Binding}"/>
-                                                </StackPanel>
-                                    </DataTemplate>
-                                </Setter.Value>
-                            </Setter>
-                        </Style>
-                    </TreeView.Resources>
-                        </TreeView>
-            </Grid>
-                    -->
+                    <!--For Scroll bar-->
                     <ScrollViewer Height="580" x:Name="ScrollViewer">
                         <ItemsControl x:Name="ItemsControl">
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <MyControl:SurahListItem/>
+                                    <MyControl:SurahListItem  MouseLeftButtonDown="SurahListItem_MouseLeftButtonDown_1"/>
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
@@ -55,14 +41,23 @@
          <!--Second Tab Item-->
                 
                 <TabItem Header="Juz" FontSize="22" Padding="45 0 75 0">
-                    <MyControl:SurahListItem>
-                        
-                    </MyControl:SurahListItem>
+                    
                 </TabItem>
             </TabControl>
 
         </StackPanel>
-        <Image Grid.Column="1" MouseMove="Image_MouseMove_1" VerticalAlignment="Top" Source="Images/QuranEMajeedTestPic1.gif"/> 
-
+        <!--For Right Side-->
+        <Grid Grid.Column="1" Margin="0,0,0,10">
+           
+            <Grid >
+                <Grid.Background>
+                    <ImageBrush ImageSource="C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\Images\QuranEMajeedTestPic1.gif"/>
+                </Grid.Background>
+               <!-- Dont make row in grid it will
+                    press the image set manually 
+                    the height and allignment of custom control-->
+            </Grid>
+            
+        </Grid>
     </Grid>
 </Window>

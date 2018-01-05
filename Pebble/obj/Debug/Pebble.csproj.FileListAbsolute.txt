@@ -14,3 +14,4 @@ C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\obj\Deb
 C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\obj\Debug\Pebble.csproj.GenerateResource.Cache
 C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\obj\Debug\Pebble.exe
 C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\obj\Debug\Pebble.pdb
+C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\obj\Debug\Pebble.csprojResolveAssemblyReference.cache

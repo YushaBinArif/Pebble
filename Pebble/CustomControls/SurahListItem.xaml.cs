@@ -33,14 +33,15 @@ namespace Pebble
         public string Verse 
         {
             get { return this.VerseNumber.Text; }
-            set { this.VerseNumber.Text = value; }
+            set { this.VerseNumber.Text = "Verse: " + value; }
         }
 
         public string Ruku
         {
             get { return this.RukuNumber.Text; }
-            set { this.RukuNumber.Text = value; }
+            set { this.RukuNumber.Text = "Ruku: " + value; }
         }
+
 
         public String Icon
         {

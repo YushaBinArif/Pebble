@@ -10,24 +10,24 @@
          <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
         <Border Background="Aqua" Width="10" VerticalAlignment="Center" Height="60" />
         <!--Image-->
         <Border Grid.Column="1" Padding="8" HorizontalAlignment="Left" Width="73" RenderTransformOrigin="0.378,0.489">
             <Border VerticalAlignment="Stretch" Background="Aqua"  Margin="2,-2,3,-2" CornerRadius="40" >
-                <Image x:Name="IconOfSurah"  Source="C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\Images\picb.png" Stretch="UniformToFill" Margin="10,0,-10,0"  />
+                <Image x:Name="IconOfSurah"  Source="C:\Users\Yousha Arif\Documents\Visual Studio 2012\Projects\Pebble\Pebble\Images\Makkah5.PNG" Stretch="UniformToFill" RenderTransformOrigin="-0.327,0.521"  />
                 <!--  <TextBlock Text="1" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" />-->
             </Border>
         </Border>
         <!--Text-->
         <Grid  Grid.Column="2">
             <StackPanel Orientation="Vertical">
-                <TextBlock x:Name="NameOfSurah" TextAlignment="Left" Text="{Binding Surah}" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="25" Height="33" Margin="2,0" />
+                <TextBlock x:Name="NameOfSurah" TextAlignment="Left" Text="{Binding Surah}" FontStyle="Normal" Foreground="Black" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="22" Height="33" Margin="2,0" FontFamily="Segoe UI Light" />
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock x:Name="VerseNumber" Text="Verse :" Padding="0 3 0 8" VerticalAlignment="Center" Width="100" Foreground="Gray"/>
-                    <TextBlock x:Name="RukuNumber" Text="Ruku :" Padding="0 3 0 8" Width="113" Foreground="Gray" RenderTransformOrigin="0.487,2.375" />
+                    <TextBlock x:Name="VerseNumber" Text="Verse :" Padding="0 3 0 8" VerticalAlignment="Center" Width="100" Foreground="Gray" FontFamily="Segoe UI Light" FontSize="10"/>
+                    <TextBlock x:Name="RukuNumber" Text="Ruku :" Padding="0 3 0 8" Width="113" Foreground="Gray" RenderTransformOrigin="0.487,2.375" FontFamily="Segoe UI Light" FontSize="10" />
                 </StackPanel>
                 
             </StackPanel>

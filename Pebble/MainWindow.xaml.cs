@@ -23,6 +23,7 @@ namespace Pebble
         public MainWindow()
         {
             InitializeComponent();
+
         }
          private void Window_Loaded_1(object sender, RoutedEventArgs e)
         {
@@ -38,6 +39,7 @@ namespace Pebble
                 var item = new SurahListItem();
                 item.Surah = word[0];
                 item.Verse = word[1];
+                item.MaxHeight = 60;
                 item.Ruku = word[2];
              //   try
             //    {
@@ -48,6 +50,7 @@ namespace Pebble
                //     item.Icon = "Images/picb.png";
                 //}
                // catch { }
+
                 ItemsControl.Items.Add(item);
             }
         }
@@ -59,6 +62,18 @@ namespace Pebble
            //  this.Text1.Text = x + ", " + y;
             
          }
+
+         private void SurahListItem_Click_1(object sender, RoutedEventArgs e)
+         {
+
+         }
+
+         private void SurahListItem_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+         {
+             if (e.ChangedButton == MouseButton.Left)
+                 MessageBox.Show("asdasd");
+         }
+
       
 
     }
